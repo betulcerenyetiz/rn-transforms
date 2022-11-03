@@ -13,7 +13,7 @@ Tek bir methodu vardır: `transform()`Yapılacak değişiklikleri ise `transform
  `transform()`,  bir array içerisinde property'leri kabul eder. Properties, **px**, **rad**, **deg** ve **%** değerlerini kabul eder.
  
 
-    `transform([{  rotateX:  '45deg'  },  {  rotateZ:  '0.785398rad'  }])`
+    transform([{  rotateX:  '45deg'  },  {  rotateZ:  '0.785398rad'  }])
 
  
 
@@ -23,7 +23,7 @@ Tek bir methodu vardır: `transform()`Yapılacak değişiklikleri ise `transform
 
 scale, **number** değer alır. Uygulanan component'in boyutunu verilen number değer kadar değiştirir. **scale**, **scaleX** ve **scaleY** kullanımları vardır. 
 
-        `<View style={styles.box}>
+        <View style={styles.box}>
             <Text style={styles.text}>Original Object</Text>
         </View>
             /////X ve Y ekseninde boyut değişimi/////
@@ -37,14 +37,14 @@ scale, **number** değer alır. Uygulanan component'in boyutunu verilen number d
             /////Y ekseninde boyut değişimi/////
         <View style={[styles.box,{transform: [{scaleY: 2}],},]}>
             <Text style={styles.text}>ScaleY by 2</Text>
-        </View>`
+        </View>
  
  ![](./readmeimages/1.png)
 
  - ### rotate
  rotate, belirtilen değer kadar component'in döndürülmesini sağlar. **rotate**, **rotateX**, **rotateY** ve **rotateZ** kullanımları vardır. 
 
-        `    /////45 derece döndürme/////
+            /////45 derece döndürme/////
         <View style={[styles.box,{transform: [{rotate: '45deg'}],},]}>
             <Text style={styles.text}>Rotate by 45 deg</Text>
         </View>
@@ -55,14 +55,14 @@ scale, **number** değer alır. Uygulanan component'in boyutunu verilen number d
             /////Y ve Z eksenlerinde 45 derece döndürme/////
         <View style={[styles.box,{transform: [{rotateY: '45deg'}, {rotateZ:'45deg'}],},]}>
             <Text style={styles.text}>Rotate Y&Z by 45 deg</Text>
-        </View>`
+        </View>
 
   ![](./readmeimages/2.png) 
 
  - ### skew
  skew, belirtilen değer kadar component'i çarpıtır. **skew**, **skewX**, **skewY** ve **skewZ** kullanımları vardır. 
 
-       `     /////45 derece çarpıtma/////
+            /////45 derece çarpıtma/////
         <View style={[styles.box,{transform: [{skewX: '45deg'}],},]}>
             <Text style={styles.text}>SkewX by 45 deg</Text>
         </View>
@@ -73,7 +73,7 @@ scale, **number** değer alır. Uygulanan component'in boyutunu verilen number d
             /////X ve Z ekseninde 30 derece çarpıtma/////
         <View style={[styles.box,{transform: [{skewX: '30deg'}, {skewY: '30deg'}],},]}>
             <Text style={styles.text}>Skew X&Y by 30 deg</Text>
-        </View>`
+        </View>
 
   ![](./readmeimages/3.png) 
 
@@ -81,13 +81,13 @@ scale, **number** değer alır. Uygulanan component'in boyutunu verilen number d
  translate, belirtilen değer kadar component'in yerini değiştirir. **translateX** ve **translateY** kullanımları vardır. X ekseninde negatif(-) değerler sola, pozitif(+) değerler sağa doğru kayar. Y ekseninde negatif(-) değerler yukarı, pozitif(+) değerler aşağıya doğru kayar.
 
 
-        `    /////X ekseninde 50 birim sağa/////
+            /////X ekseninde 50 birim sağa/////
         <View style={[styles.box,{transform: [{translateX: 50}],},]}>
             <Text style={styles.text}>TranslateX by 50 </Text>
         </View>
             /////Y ekseninde 140 birim yukarı/////
         <View style={[styles.box,{transform: [{translateY: -140}],},]}>
             <Text style={styles.text}>TranslateY by -140 </Text>
-        </View>`
+        </View>
 
   ![](./readmeimages/4.png) 
